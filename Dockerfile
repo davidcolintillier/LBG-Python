@@ -4,8 +4,8 @@ WORKDIR /app
 
 COPY . .
 
-RUN PIP install
+RUN PIP install Flask
 
 EXPOSE 5000
 
-CMD Python start
+ENTRYPOINT ["python", "app.py"]
